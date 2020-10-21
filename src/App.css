@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+.app {
+  background-color: #402218;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__container {
+  margin-top: 20vh;
+  width: 100%;
+  max-width: 480px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  color: #f0f0f0;
+  /* background-color: #914D37; */
+  height: max-content;
+  padding: 30px 40px;
+  padding-bottom: 0;
+  border-radius: 20px;
+  /* border: 2px solid #888; */
+}
+
+.app__container>* {
+  margin-bottom: 30px;
+}
+
+.app__container>h1 {
+  font-weight: 600;
+}
+
+.app__locationContainer {
+  background-color: #C98670;
+  border-radius: 20px;
+  /* border: 1px solid #DDD; */
+  color: #202020;
+  font-weight: 400;
+  padding-top: 20px;
+  margin-bottom: 0 !important;
+}
+
+.app__locationContainer>* {
+  margin-bottom: 10px;
+}
+
+.app__place {
+  font-weight: 400;
+  /* color: goldenrod; */
+}
+
+.app__tempSymbol {
+  color: darkblue;
+}
+
+.app__button {
+  width: 100%;
+  border: none;
+  margin: 10px auto;
+  background-color: #C98670;
+  border-radius: 10px;
+  color: #202020;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.app__button:hover {
+  background-color: lightsalmon;
+}
+
+.app__button:active {
+  transform: scale(0.98);
+}
+
+.app__container>footer {
+  font-size: 1rem;
+}
+
+.app__myName {
+  color: lightsalmon;
+}
+
+@media (max-width: 480px) {
+  .app__container>h1 {
+    display: none;
+  }
+}
+
+.app__loading {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 7rem;
+  margin-top: 30vh;
 }
